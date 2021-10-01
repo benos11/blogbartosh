@@ -1,0 +1,2 @@
+# blogbartosh
+blog bartosh
