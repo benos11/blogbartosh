@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #C0C0C0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+main {
+    height: 100vh;
+    background-color: azure;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+     font-family: 'Montserrat', sans-serif;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70%;
+}
+
+header nav {
+    position: absolute;
+    right: 7%;
+    top: 2%;
+    font-size: 3rem;
+}
+
+header hgroup {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4rem;
+    position: absolute
+    bottom: 20%;
+    
+}
+
+header h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 4rem;
+    bottom: 100%;
+}
+
+header h4 {
+    font-size: 2rem;
+    bottom: 100%;
+}
+
+#arrow {
+    width: 64px;
+    height: 64px;
+    border: 4px solid white;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px -10px 0 white, 0px -11px 0 white;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+@media (orientation: portrait) {
+    h3 span::after {
+        content: '\A';
+        white-space: pre;
+    }
+}
+
+#arrow:hover {
+    text-shadow: 0px -10px 0 black, 
+    color: white;
+    border color: white;
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    animation: arrow 1.6s infinite linear;
+}
+
+@media (orientation: landscape) {
+    header img {
+        right: 0;
+        height: 100%;
+      
+    }
+}
+
+@media (max-width: 320px) {
+    header h3 {
+        font-size: 1.8rem;
+      
+    }
+}
+
+@keyframes arrow {
+    0% {transform: translateY(-80px)}
+    50% {transform: translateY(0px)}
+    100% {transform: translateY(80px)
+    }
+}
+
+ #footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;		
+		background:#b5fbbd;
